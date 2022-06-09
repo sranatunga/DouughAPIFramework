@@ -1,0 +1,1355 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "properties": {
+    "lat": {
+      "type": "number"
+    },
+    "lon": {
+      "type": "number"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "timezone_offset": {
+      "type": "integer"
+    },
+    "current": {
+      "type": "object",
+      "properties": {
+        "dt": {
+          "type": "integer"
+        },
+        "sunrise": {
+          "type": "integer"
+        },
+        "sunset": {
+          "type": "integer"
+        },
+        "temp": {
+          "type": "number"
+        },
+        "feels_like": {
+          "type": "number"
+        },
+        "pressure": {
+          "type": "integer"
+        },
+        "humidity": {
+          "type": "integer"
+        },
+        "dew_point": {
+          "type": "number"
+        },
+        "uvi": {
+          "type": "integer"
+        },
+        "clouds": {
+          "type": "integer"
+        },
+        "visibility": {
+          "type": "integer"
+        },
+        "wind_speed": {
+          "type": "number"
+        },
+        "wind_deg": {
+          "type": "integer"
+        },
+        "wind_gust": {
+          "type": "number"
+        },
+        "weather": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "main": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "icon": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "main",
+                "description",
+                "icon"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "dt",
+        "sunrise",
+        "sunset",
+        "temp",
+        "feels_like",
+        "pressure",
+        "humidity",
+        "dew_point",
+        "uvi",
+        "clouds",
+        "visibility",
+        "wind_speed",
+        "wind_deg",
+        "wind_gust",
+        "weather"
+      ]
+    },
+    "daily": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "dt": {
+              "type": "integer"
+            },
+            "sunrise": {
+              "type": "integer"
+            },
+            "sunset": {
+              "type": "integer"
+            },
+            "moonrise": {
+              "type": "integer"
+            },
+            "moonset": {
+              "type": "integer"
+            },
+            "moon_phase": {
+              "type": "number"
+            },
+            "temp": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "min": {
+                  "type": "number"
+                },
+                "max": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "min",
+                "max",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "feels_like": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "pressure": {
+              "type": "integer"
+            },
+            "humidity": {
+              "type": "integer"
+            },
+            "dew_point": {
+              "type": "number"
+            },
+            "wind_speed": {
+              "type": "number"
+            },
+            "wind_deg": {
+              "type": "integer"
+            },
+            "wind_gust": {
+              "type": "number"
+            },
+            "weather": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "main": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "icon": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "main",
+                    "description",
+                    "icon"
+                  ]
+                }
+              ]
+            },
+            "clouds": {
+              "type": "integer"
+            },
+            "pop": {
+              "type": "integer"
+            },
+            "uvi": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "dt",
+            "sunrise",
+            "sunset",
+            "moonrise",
+            "moonset",
+            "moon_phase",
+            "temp",
+            "feels_like",
+            "pressure",
+            "humidity",
+            "dew_point",
+            "wind_speed",
+            "wind_deg",
+            "wind_gust",
+            "weather",
+            "clouds",
+            "pop",
+            "uvi"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "dt": {
+              "type": "integer"
+            },
+            "sunrise": {
+              "type": "integer"
+            },
+            "sunset": {
+              "type": "integer"
+            },
+            "moonrise": {
+              "type": "integer"
+            },
+            "moonset": {
+              "type": "integer"
+            },
+            "moon_phase": {
+              "type": "number"
+            },
+            "temp": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "min": {
+                  "type": "number"
+                },
+                "max": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "min",
+                "max",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "feels_like": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "pressure": {
+              "type": "integer"
+            },
+            "humidity": {
+              "type": "integer"
+            },
+            "dew_point": {
+              "type": "number"
+            },
+            "wind_speed": {
+              "type": "number"
+            },
+            "wind_deg": {
+              "type": "integer"
+            },
+            "wind_gust": {
+              "type": "number"
+            },
+            "weather": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "main": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "icon": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "main",
+                    "description",
+                    "icon"
+                  ]
+                }
+              ]
+            },
+            "clouds": {
+              "type": "integer"
+            },
+            "pop": {
+              "type": "number"
+            },
+            "uvi": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "dt",
+            "sunrise",
+            "sunset",
+            "moonrise",
+            "moonset",
+            "moon_phase",
+            "temp",
+            "feels_like",
+            "pressure",
+            "humidity",
+            "dew_point",
+            "wind_speed",
+            "wind_deg",
+            "wind_gust",
+            "weather",
+            "clouds",
+            "pop",
+            "uvi"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "dt": {
+              "type": "integer"
+            },
+            "sunrise": {
+              "type": "integer"
+            },
+            "sunset": {
+              "type": "integer"
+            },
+            "moonrise": {
+              "type": "integer"
+            },
+            "moonset": {
+              "type": "integer"
+            },
+            "moon_phase": {
+              "type": "number"
+            },
+            "temp": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "min": {
+                  "type": "number"
+                },
+                "max": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "min",
+                "max",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "feels_like": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "pressure": {
+              "type": "integer"
+            },
+            "humidity": {
+              "type": "integer"
+            },
+            "dew_point": {
+              "type": "number"
+            },
+            "wind_speed": {
+              "type": "number"
+            },
+            "wind_deg": {
+              "type": "integer"
+            },
+            "wind_gust": {
+              "type": "number"
+            },
+            "weather": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "main": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "icon": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "main",
+                    "description",
+                    "icon"
+                  ]
+                }
+              ]
+            },
+            "clouds": {
+              "type": "integer"
+            },
+            "pop": {
+              "type": "integer"
+            },
+            "uvi": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "dt",
+            "sunrise",
+            "sunset",
+            "moonrise",
+            "moonset",
+            "moon_phase",
+            "temp",
+            "feels_like",
+            "pressure",
+            "humidity",
+            "dew_point",
+            "wind_speed",
+            "wind_deg",
+            "wind_gust",
+            "weather",
+            "clouds",
+            "pop",
+            "uvi"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "dt": {
+              "type": "integer"
+            },
+            "sunrise": {
+              "type": "integer"
+            },
+            "sunset": {
+              "type": "integer"
+            },
+            "moonrise": {
+              "type": "integer"
+            },
+            "moonset": {
+              "type": "integer"
+            },
+            "moon_phase": {
+              "type": "number"
+            },
+            "temp": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "min": {
+                  "type": "number"
+                },
+                "max": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "min",
+                "max",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "feels_like": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "pressure": {
+              "type": "integer"
+            },
+            "humidity": {
+              "type": "integer"
+            },
+            "dew_point": {
+              "type": "number"
+            },
+            "wind_speed": {
+              "type": "number"
+            },
+            "wind_deg": {
+              "type": "integer"
+            },
+            "wind_gust": {
+              "type": "number"
+            },
+            "weather": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "main": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "icon": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "main",
+                    "description",
+                    "icon"
+                  ]
+                }
+              ]
+            },
+            "clouds": {
+              "type": "integer"
+            },
+            "pop": {
+              "type": "integer"
+            },
+            "rain": {
+              "type": "number"
+            },
+            "uvi": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "dt",
+            "sunrise",
+            "sunset",
+            "moonrise",
+            "moonset",
+            "moon_phase",
+            "temp",
+            "feels_like",
+            "pressure",
+            "humidity",
+            "dew_point",
+            "wind_speed",
+            "wind_deg",
+            "wind_gust",
+            "weather",
+            "clouds",
+            "pop",
+            "rain",
+            "uvi"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "dt": {
+              "type": "integer"
+            },
+            "sunrise": {
+              "type": "integer"
+            },
+            "sunset": {
+              "type": "integer"
+            },
+            "moonrise": {
+              "type": "integer"
+            },
+            "moonset": {
+              "type": "integer"
+            },
+            "moon_phase": {
+              "type": "number"
+            },
+            "temp": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "min": {
+                  "type": "number"
+                },
+                "max": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "min",
+                "max",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "feels_like": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "pressure": {
+              "type": "integer"
+            },
+            "humidity": {
+              "type": "integer"
+            },
+            "dew_point": {
+              "type": "number"
+            },
+            "wind_speed": {
+              "type": "number"
+            },
+            "wind_deg": {
+              "type": "integer"
+            },
+            "wind_gust": {
+              "type": "number"
+            },
+            "weather": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "main": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "icon": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "main",
+                    "description",
+                    "icon"
+                  ]
+                }
+              ]
+            },
+            "clouds": {
+              "type": "integer"
+            },
+            "pop": {
+              "type": "number"
+            },
+            "rain": {
+              "type": "number"
+            },
+            "uvi": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "dt",
+            "sunrise",
+            "sunset",
+            "moonrise",
+            "moonset",
+            "moon_phase",
+            "temp",
+            "feels_like",
+            "pressure",
+            "humidity",
+            "dew_point",
+            "wind_speed",
+            "wind_deg",
+            "wind_gust",
+            "weather",
+            "clouds",
+            "pop",
+            "rain",
+            "uvi"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "dt": {
+              "type": "integer"
+            },
+            "sunrise": {
+              "type": "integer"
+            },
+            "sunset": {
+              "type": "integer"
+            },
+            "moonrise": {
+              "type": "integer"
+            },
+            "moonset": {
+              "type": "integer"
+            },
+            "moon_phase": {
+              "type": "number"
+            },
+            "temp": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "min": {
+                  "type": "number"
+                },
+                "max": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "min",
+                "max",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "feels_like": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "pressure": {
+              "type": "integer"
+            },
+            "humidity": {
+              "type": "integer"
+            },
+            "dew_point": {
+              "type": "number"
+            },
+            "wind_speed": {
+              "type": "number"
+            },
+            "wind_deg": {
+              "type": "integer"
+            },
+            "wind_gust": {
+              "type": "number"
+            },
+            "weather": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "main": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "icon": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "main",
+                    "description",
+                    "icon"
+                  ]
+                }
+              ]
+            },
+            "clouds": {
+              "type": "integer"
+            },
+            "pop": {
+              "type": "number"
+            },
+            "rain": {
+              "type": "number"
+            },
+            "uvi": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "dt",
+            "sunrise",
+            "sunset",
+            "moonrise",
+            "moonset",
+            "moon_phase",
+            "temp",
+            "feels_like",
+            "pressure",
+            "humidity",
+            "dew_point",
+            "wind_speed",
+            "wind_deg",
+            "wind_gust",
+            "weather",
+            "clouds",
+            "pop",
+            "rain",
+            "uvi"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "dt": {
+              "type": "integer"
+            },
+            "sunrise": {
+              "type": "integer"
+            },
+            "sunset": {
+              "type": "integer"
+            },
+            "moonrise": {
+              "type": "integer"
+            },
+            "moonset": {
+              "type": "integer"
+            },
+            "moon_phase": {
+              "type": "number"
+            },
+            "temp": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "min": {
+                  "type": "number"
+                },
+                "max": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "min",
+                "max",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "feels_like": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "pressure": {
+              "type": "integer"
+            },
+            "humidity": {
+              "type": "integer"
+            },
+            "dew_point": {
+              "type": "number"
+            },
+            "wind_speed": {
+              "type": "number"
+            },
+            "wind_deg": {
+              "type": "integer"
+            },
+            "wind_gust": {
+              "type": "number"
+            },
+            "weather": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "main": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "icon": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "main",
+                    "description",
+                    "icon"
+                  ]
+                }
+              ]
+            },
+            "clouds": {
+              "type": "integer"
+            },
+            "pop": {
+              "type": "number"
+            },
+            "uvi": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "dt",
+            "sunrise",
+            "sunset",
+            "moonrise",
+            "moonset",
+            "moon_phase",
+            "temp",
+            "feels_like",
+            "pressure",
+            "humidity",
+            "dew_point",
+            "wind_speed",
+            "wind_deg",
+            "wind_gust",
+            "weather",
+            "clouds",
+            "pop",
+            "uvi"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "dt": {
+              "type": "integer"
+            },
+            "sunrise": {
+              "type": "integer"
+            },
+            "sunset": {
+              "type": "integer"
+            },
+            "moonrise": {
+              "type": "integer"
+            },
+            "moonset": {
+              "type": "integer"
+            },
+            "moon_phase": {
+              "type": "number"
+            },
+            "temp": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "min": {
+                  "type": "integer"
+                },
+                "max": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "day",
+                "min",
+                "max",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "feels_like": {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "number"
+                },
+                "night": {
+                  "type": "number"
+                },
+                "eve": {
+                  "type": "number"
+                },
+                "morn": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "day",
+                "night",
+                "eve",
+                "morn"
+              ]
+            },
+            "pressure": {
+              "type": "integer"
+            },
+            "humidity": {
+              "type": "integer"
+            },
+            "dew_point": {
+              "type": "number"
+            },
+            "wind_speed": {
+              "type": "number"
+            },
+            "wind_deg": {
+              "type": "integer"
+            },
+            "wind_gust": {
+              "type": "number"
+            },
+            "weather": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "main": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "icon": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "main",
+                    "description",
+                    "icon"
+                  ]
+                }
+              ]
+            },
+            "clouds": {
+              "type": "integer"
+            },
+            "pop": {
+              "type": "integer"
+            },
+            "rain": {
+              "type": "number"
+            },
+            "uvi": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "dt",
+            "sunrise",
+            "sunset",
+            "moonrise",
+            "moonset",
+            "moon_phase",
+            "temp",
+            "feels_like",
+            "pressure",
+            "humidity",
+            "dew_point",
+            "wind_speed",
+            "wind_deg",
+            "wind_gust",
+            "weather",
+            "clouds",
+            "pop",
+            "rain",
+            "uvi"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "lat",
+    "lon",
+    "timezone",
+    "timezone_offset",
+    "current",
+    "daily"
+  ]
+}
